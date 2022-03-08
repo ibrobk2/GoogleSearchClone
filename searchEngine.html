@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        img{
+            width: 30%;
+        }
+
+        .container{
+            text-align: center;
+            margin-top: 80px;
+        }
+        input{
+            padding: 14px;
+           }
+           input[type="text"]{
+            width: 50%;
+            margin-bottom: 12px;
+            border-radius: 40px;
+            border: 1px solid #909090;
+            font-size: 18px;
+            opacity: 0.5;
+            outline: none;
+            
+           }
+           input[type="submit"]{
+               margin-right: 12px;
+               border-radius: 8px;
+                border: 1px solid #909090;
+                font-size: 12px;
+                color: #777;
+                font-weight: 700;
+                border: none;
+
+           }
+
+           input[type="submit"]:hover{
+               cursor: pointer;
+               background-color: azure;
+               border: none;
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="search.png" alt="">
+        <form action="http://google.com/search" method="get" autocomplete="on">
+            <input type="text" placeholder="Enter Search Keyword" name="q" autofocus> <br>
+            <input type="submit" value="Search">
+            <input type="submit" value="I'm Feeling Lucky">
+        </form>
+    </div>
+</body>
+</html>
