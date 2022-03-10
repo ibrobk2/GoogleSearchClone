@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        .container{
+            text-align: center;
+            margin-top: 80px;
+        }
+        img{
+            width: 40%;
+        }
+
+        input{
+            padding: 12px;
+            margin-bottom: 10px;
+        }
+        input[type="text"]{
+            width: 50%;
+            padding: 14px;
+            border-radius: 40px;
+            border: 1px solid grey;
+            font-size: 18px;
+            outline: gray;
+            color:teal;
+        }
+        input[type="submit"]{
+            margin-right: 15px;
+            outline: none;
+            border: none;
+            color: grey;
+        }
+        input[type="submit"]:hover{
+            background-color: azure;
+            cursor: pointer;
+        }
+        footer{
+            margin-top: 90px;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        header{
+            display: flex;
+            gap: 15px;
+            float: right;
+            
+        }
+        header p{
+            margin-top: -70px;
+            height: 10px;
+            width: 50px;
+        }
+        p#pro{
+            width: 10px;
+            height: 10px;
+            background-color: #505050;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bolder;
+            
+        }
+        p#dots{
+            width: 10px;
+            height: 10px;
+          
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bolder; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><a href="https://gmail.com" >Gmail</a></p>
+        <p><a href="https://images.google.com" >Images</a></p>
+       <p id="dots">::</p>
+       <p id="pro">I</p>
+    </header>
+    <div class="container">
+        <img src="searchlogo.png" alt="">
+        <form action="https://google.com/search" method="get">
+            <input type="text" placeholder="Enter a Search Keywords" name="q" autofocus> <br>
+            <input type="submit" value="Search">
+            <input type="submit" value="I'm feeling lucky">
+        </form>
+        <footer>
+            <p>Copyright &copy; 2022 <a href="https://pssvision.com" >proxy software systems.</a></p>
+        </footer>
+    </div>
+</body>
+</html>

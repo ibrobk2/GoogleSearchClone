@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        
+        <form>
+            <h3>Registration Form</h3>
+            <div class="form-input">
+                <label for="full name">Full Name</label>
+                <input type="text">
+            </div>
+            <div class="form-input">
+                <label for="phone">Phone Number</label>
+                <input type="number">
+            </div>
+            <div class="form-input">
+                <label for="email">Email Address</label>
+                <input type="email">
+            </div>
+            <br>
+            <div class="form-input">
+                <label for="address">Conatct Address</label><br>
+                <textarea cols="20" rows="5"></textarea>
+            </div>
+            <div class="form-input">
+                <select>
+                    <option value="Kano">Kano</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Zamfara">Zamfara</option>
+                    <option value="Select State" selected>Select State</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-input">
+                <label for="lga">LGA</label>
+                <input type="text">
+            </div>
+            <div class="form-input">
+                <label for="favColor">Favourite Color(s)</label><br>
+               <label>Blue</label> <input type="checkbox">
+               <label>Red</label> <input type="checkbox">
+               <label>Green</label> <input type="checkbox"><br>
+               <label>Pink</label> <input type="checkbox">
+               <label>Azure</label> <input type="checkbox">
+               <label>Yellow</label> <input type="checkbox">
+
+            </div>
+            <div class="form-input">
+                <label for="gender">Gender</label><br>
+                <label for="male">Male</label><input type="radio" name="gender">
+                <label for="female">Female</label><input type="radio" name="gender">
+
+            </div>
+            <div class="form-input">
+                <label for="dob">Date of Birth</label>
+                <input type="date">
+            </div>
+            <div class="form-input">
+                <label for="username">Username</label>
+                <input type="text">
+            </div>
+            <div class="form-input">
+                <label for="pwd">Password</label>
+                <input type="password">
+            </div>
+            <button>Register</button>
+            <input type="reset" value="Clear Fields">
+        </form>
+    </div>
+</body>
+</html>

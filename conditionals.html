@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions In JS</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        form{
+            text-align: center;
+            margin-top: 60px;
+        }
+        input, button{
+            padding: 12px;
+
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h2></h2>
+        <input type="number" autofocus placeholder="Enter your Score: " id="num" ><br><br>
+        <button>Check Admission Status</button>
+    </form>
+    <script>
+       var score = parseInt(document.getElementById("num").value);
+        if(score>=180){
+            document.querySelector("button").addEventListener('click', function (){
+                console.log("congratulations.")
+                //document.querySelector("h2").innerHTML= "Congratulations, You are Eligible for Admission";
+            });
+        }
+        else{
+            document.querySelector("button").addEventListener('click', function (){
+                console.log("Sorry...")
+
+                //document.querySelector("h2").innerHTML='Sorry, You are NOT Eligible For Admission';
+
+            });
+        }
+    </script>
+</body>
+</html>

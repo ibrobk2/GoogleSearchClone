@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table,thead,th,tr,td{
+            border: 4px solid #fff;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>SNO.</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Amina Aminu</td>
+            <td>Bakori</td>
+            <td>08024772431</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Yusuf Saleh</td>
+            <td>Katsina</td>
+            <td>09135363778</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Al-amin Bin Ahmad</td>
+            <td>Katsina</td>
+            <td>07067156212</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Fadil Isah</td>
+            <td>Kaduna</td>
+            <td>08039119660</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Aliyu Nasir</td>
+            <td>Katsina</td>
+            <td>08098765456</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!-- Table 2 -->
+    <table>
+        <thead>
+            <th>SNO.</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th colspan="2">Action</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Amina Aminu</td>
+            <td rowspan="5">Katsina</td>
+            <td>08024772431</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Yusuf Saleh</td>
+            <!-- <td>Katsina</td> -->
+            <td>09135363778</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Al-amin Bin Ahmad</td>
+            <!-- <td>Katsina</td> -->
+            <td>07067156212</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Fadil Isah</td>
+            <!-- <td>Kaduna</td> -->
+            <td>08039119660</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Aliyu Nasir</td>
+            <!-- <td>Katsina</td> -->
+            <td>08098765456</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+    </table>
+
+     <!-- Table 3 -->
+     <table>
+        <thead>
+            <th>SNO.</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th rowspan="6">Action</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Amina Aminu</td>
+            <td rowspan="5">Katsina</td>
+            <td>08024772431</td>
+           
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Yusuf Saleh</td>
+            <!-- <td>Katsina</td> -->
+            <td>09135363778</td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Al-amin Bin Ahmad</td>
+            <!-- <td>Katsina</td> -->
+            <td>07067156212</td>
+           
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Fadil Isah</td>
+            <!-- <td>Kaduna</td> -->
+            <td>08039119660</td>
+            
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Aliyu Nasir</td>
+            <!-- <td>Katsina</td> -->
+            <td>08098765456</td>
+           
+        </tr>
+    </table>
+</body>
+</html>
