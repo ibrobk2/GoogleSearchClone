@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <div class="conta">
+        <h2 id="txt">
+            Generate a Quote
+        </h2>
+        <button onclick="generate()">Click to Generate a Quote</button>
+    </div>
+    <script>
+        function generate(){
+            var quotes = [
+                "No condition is permanent",
+                "There is no alternative to harwork",
+                "The harder you work, the luckier you become",
+                "More money, More respect",
+                "The hard way, The only way",
+                "Timing is everything",
+                "No room for racism"
+                ];
+
+                var rand = Math.floor(Math.random()*quotes.length);
+               // console.log(rand);
+
+                document.getElementById("txt").innerHTML = (quotes[rand]);
+        }
+    </script>
+</body>
+</html>

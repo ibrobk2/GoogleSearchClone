@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays In JS</title>
+</head>
+<body>
+    <h2 id="txt"></h2>
+    <button>Click to Generate</button>
+    <script>
+        function generate(){
+            var cars = ["Toyota", "Honda", "Volvo", "Hyuandai"];
+
+            //console.log(cars);
+            var rand = Math.floor(Math.random()*(cars.length));
+            //console.log(rand)
+            if(rand){
+                document.querySelector("h2").innerHTML = (cars[rand]);
+            }
+        }
+        //Add Event Listener
+         document.querySelector("button").addEventListener('click', generate);
+        
+    </script>
+   
+</body>
+</html>

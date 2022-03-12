@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Eligibility Checker</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        section{
+            text-align: center;
+            margin-top: 120px;
+        }
+        input, button{
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2></h2>
+        <input type="text" placeholder="Enter your score"><br><br>
+        <button>Check Admission Status</button>
+    </section>
+    <script>
+        document.querySelector("button").addEventListener('click', function (){
+            var score = document.querySelector("input").value;
+            if(score>=180){
+                document.querySelector("h2").innerHTML = 'Congratulations, you are eligible for Admission.';
+            }
+            else{
+                document.querySelector("h2").innerHTML = 'Sorry, you are NOT eligible for Admission.';
+
+            }
+        })
+    </script>
+    
+</body>
+</html>
